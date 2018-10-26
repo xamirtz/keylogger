@@ -15,6 +15,7 @@ software-based approaches to acoustic analysis.
 ### keylogger_v1.0 
 - Basic keylogger to record the keystrokes through a C++ program.
 - Saves the Record.txt file in the parent folder.
+- Doesn't log lowercase characters and symbols
 
 ## License
 GNU GPLv3.0
