@@ -5,8 +5,14 @@
 
 using namespace std;
 
+void log();
+
 int main()	{
-	
+	log();
+	return 0;	
+}
+
+void log()	{
 	char c;
 	
 	for(;;)	{
@@ -17,6 +23,4 @@ int main()	{
 			}
 		}
 	}
-	
-	return 0;	
 }
