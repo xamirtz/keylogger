@@ -13,7 +13,7 @@ software-based approaches to acoustic analysis.
 
 ### What's new?
 #### keylogger_v1.1
-- Logging keys including enter, esc, del, <space> and <backspace>.
+- Logging keys including enter, esc, del, space and backspace.
 
 #### keylogger_v1.0 
 - Basic keylogger to record the keystrokes through a C++ program.
