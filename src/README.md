@@ -12,6 +12,9 @@ Keylogging can also be used to study human–computer interaction. Numerous keyl
 software-based approaches to acoustic analysis.
 
 ### What's new?
+#### keylogger_v1.1
+- Logging keys including enter, esc, del, <space> and <backspace>.
+
 #### keylogger_v1.0 
 - Basic keylogger to record the keystrokes through a C++ program.
 - Saves the Record.txt file in the parent folder.
